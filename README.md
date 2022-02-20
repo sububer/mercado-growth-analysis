@@ -101,7 +101,34 @@ The `weekly` plot shows that Mercado has the highest search traffic on Tuesday o
 The `yearly` plot shows that Mercado search traffic bottoms out about mid-October each year.  
 
 
-### Forecast Revenue From Time Series Model
+### Forecast Revenue From Prophet Time Series Model
+
+Mercado daily historical sales data was analyzed with the Prophet library. Seasonal patterns were identified, and a sales forecast was prepared for the finance group.  
+
+**Mercado Daily Sales Revenue**  
+![Mercado Daily Sales Revenue](media/12-mercado-daily-sales-revenue.png)  
+
+**Mercado Seasonal Revenue Patterns**  
+![Mercado Sales Revenue Patterns](media/13-mercado-seasonal-sales-revenue-patterns.png)  
+
+**Observation:** Tues appears to be peak revenue day, with Monday a close second. It drops from Wednesday through the weekend.  
+
+A sales forecast was prepared for the finance group, highlighting the best case, worst case and most likely scenario for the upcoming quarter (~90 days).  
+
+![Mercado Revenue Model High Level With Forecast](media/14-sales-model-high-level-forecast.png)  
+
+![Mercado Daily Sales Revenue](media/15-sales-forecast-upcoming-quarter.png)  
+
+**Mercado Upcoming Quarterly Forecast**  
+The upcoming quarter (90-days following the most recent sales data which ended 5/14) predictions are:
+```
+Upcoming 90-Day Expected Total Sales (sum of sales):
+
+Worst Case     1772.191610
+Best Case      2116.791188
+Most Likely    1945.369578
+
+```
 
 
 
