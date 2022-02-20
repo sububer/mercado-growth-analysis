@@ -7,9 +7,19 @@ See full implementation and notebook details in [forecasting_net_prophet.ipynb](
 
 ## Overview Of Analysis
 
-TBD
+MercadoLibre is a popular e-commerce site in Latin America. This is a multi-faceted analysis of the company's financial and user data, aimed at shedding insights which will help the company grow. 
 
-#### DataSet Details  
+At a high-level, the following will be performed:  
+- visual depictions of seasonality based on Google Search trends
+- evaluation of how stock price correlates to Google Search trends
+- [Prophet](https://facebook.github.io/prophet/docs/quick_start.html#python-api) forecast model predicting hourly search traffic
+- a plot of forecast for future company revenue  
+
+See full implementation and notebook details in [forecasting_net_prophet.ipynb](app/forecasting_net_prophet.ipynb)  
+
+---  
+
+## DataSet Details  
 
 Data sets used to anlyze this space:
 - [google_hourly_search_trends.csv](data/google_hourly_search_trends.csv) hourly google trend data
@@ -19,10 +29,27 @@ Data sets used to anlyze this space:
 - [mercado_stock_price.csv](data/mercado_stock_price.csv)
     - contains data: `date | close `  
 
+---  
 
 ## Results  
 
-TBD  
+### Search Traffic Patterns
+
+Mercado Libre released its quarterly results in May 2020. This month was isolated and analysed.  
+The traffic in May 2020 was `38181`, which is `8.55%` higher than the median monthly traffic of `35172.5`.  
+
+**Mercado Search Trends - May 2020**  
+![May 2020 Search Results](media/01-search-traffic_patterns.png)
+
+### Seasonality Mining From Search Data
+
+### Search Traffic to Stock Price Correlation
+
+### Prophet Time Series Model
+
+### Forecast Revenue From Time Series Model
+
+
 
 See full implementation and notebook details in [forecasting_net_prophet.ipynb](app/forecasting_net_prophet.ipynb)  
 
