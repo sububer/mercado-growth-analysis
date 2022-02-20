@@ -50,7 +50,7 @@ Daily, hourly, and weekly seasonality was observed in the search data.
 
 ![Avg Traffic By Day Of Week](media/02-avg-traffic-by-day-of-week.png)  
 ![HeatMap Search DayOfWeek / Hour](media/03-heatmap-day-of-week-by-hr.png)  
-![Avg Search Traffic by Week Of Year](media/03-heatmap-day-of-week-by-hr.png)  
+![Avg Search Traffic by Week Of Year](media/04-avg-search-by-week-of-year.png)  
 
 
 ### Search Traffic to Stock Price Correlation
