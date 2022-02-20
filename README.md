@@ -55,6 +55,31 @@ Daily, hourly, and weekly seasonality was observed in the search data.
 
 ### Search Traffic to Stock Price Correlation
 
+The MercadoLibre stock price data from Jan 2015 -> July 2020 was analyzed in a few ways. First the price data was plotted for the entire time frame. Then the first half of 2020 price data was focused on, to see if any patterns emerged from the shock of March 2020. Lastly, lagged search trends, volatility, and hourly returns were examined for correlation.  
+
+![Mercado Closing Stock Price](media/05-closing-stock-price.png)  
+
+**2020 First Half Focus (Jan - June)**  
+
+Looking at the MercadoLibre stock price in detail from Jan-Jun 2020, indeed you can see a big drop of the price in March 2020, then a steady increase in price from March thru June happened. Eventually, the stock price surpassed the price pre-March shock, ending at 973, when the pre-March high was only 753.  
+However, while the search trends also had a big drop/gap in March 2020, the pattern returned pretty quickly after the initial shock, and actually was lower overall from the pre-March values. For example, the pre-March range was from 8-60 regularly, but after March, the value ranged from about 7-55.  
+
+![Mercado Close, Search Detail First Half 2020](media/06-mercado-2020-first-half-search-close.png)  
+
+Volatility, Lagged Search Trends and Hourly Stock Returns were calculated and analyzed for correlation:  
+
+![Mercado Volatility](media/07-mercado-volatility.png)  
+![Correlation - Volatility, Lagged Search Trends, Stock Returns](media/08-mercado-correlations.png)  
+
+
+Observations from correlation table:  
+`Lagged Search Trends vs Stock Volatility`  
+There is a small negative correlation of `-0.148938` between Lagged Search Trends and Stock Volatility. This means that the two values *weakly* move opposite of each other.  
+
+`Lagged Search Trends vs Stock Returns`  
+There is an even smaller positive correlation of `0.017929` between Search Trends and Stock Returns. This value is so low that its probably worth considering these two values uncorrelated.  
+
+
 ### Prophet Time Series Model
 
 ### Forecast Revenue From Time Series Model
@@ -62,10 +87,6 @@ Daily, hourly, and weekly seasonality was observed in the search data.
 
 
 See full implementation and notebook details in [forecasting_net_prophet.ipynb](app/forecasting_net_prophet.ipynb)  
-
-## Summary   
-
-TBD
 
 
 ---
