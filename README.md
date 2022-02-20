@@ -31,7 +31,7 @@ Data sets used to anlyze this space:
 
 ---  
 
-## Results  
+## Result Detail  
 
 ### Search Traffic Patterns
 
@@ -61,14 +61,15 @@ The MercadoLibre stock price data from Jan 2015 -> July 2020 was analyzed in a f
 
 **2020 First Half Focus (Jan - June)**  
 
-Looking at the MercadoLibre stock price in detail from Jan-Jun 2020, indeed you can see a big drop of the price in March 2020, then a steady increase in price from March thru June happened. Eventually, the stock price surpassed the price pre-March shock, ending at 973, when the pre-March high was only 753.  
-However, while the search trends also had a big drop/gap in March 2020, the pattern returned pretty quickly after the initial shock, and actually was lower overall from the pre-March values. For example, the pre-March range was from 8-60 regularly, but after March, the value ranged from about 7-55.  
+Looking at the MercadoLibre stock price in detail from Jan-Jun 2020, indeed you can see a big drop of the price in March 2020, then a steady increase in price from March thru June happened. Eventually, the stock price surpassed the price pre-March shock, ending at `973`, when the pre-March high was only `753`.  
+However, while the search trends also had a big drop/gap in March 2020, the pattern returned pretty quickly after the initial shock, and actually was lower overall from the pre-March values. For example, the pre-March range was from `8-60` regularly, but after March, the value ranged from about `7-55`.  
 
 ![Mercado Close, Search Detail First Half 2020](media/06-mercado-2020-first-half-search-close.png)  
 
 Volatility, Lagged Search Trends and Hourly Stock Returns were calculated and analyzed for correlation:  
 
 ![Mercado Volatility](media/07-mercado-volatility.png)  
+**Correlation**  
 ![Correlation - Volatility, Lagged Search Trends, Stock Returns](media/08-mercado-correlations.png)  
 
 
@@ -84,16 +85,17 @@ There is an even smaller positive correlation of `0.017929` between Search Trend
 
 Mercado hourly search trend data was analyzed with the Prophet library. A roughly 80 day near-term forecast was generated from the fit model. Below is a graph showing the plot of the historical data model and the 80 day forecast at the tail. The near-term forecast trends downward for the first half of the forecast, then gradually trends upward. By the end of the forecast, the trend has almost recovered to the value of the search trend pre-forecast.  
 
-
+**Fit Model w/Forecast Tail**  
 ![Mercado Search Trends Forecast - Past and 80-Day Future](media/09-mercado-near-term-search-forecast.png)  
 
+**Forecast Close Up**  
 ![Mercado Search Trends Forecast - Forecast Close Up](media/10-mercado-forecast-close-up.png)  
 
 The prophet model also revealed weekly, yearly, and daily patterns in the time series data for the search trends:  
 
 ![Mercado Prophet Seasonality Trends](media/11-mercado-daily-weekly-yearly-trends.png)  
 
-Observations:  
+**Observations:**  
 The `daily` plot shows that Mercado search is most popular in the late evening, until about midnight. So, approximately from 20:00 - 01:00 every day.  
 
 The `weekly` plot shows that Mercado has the highest search traffic on Tuesday overall, although it significantly ramps up as Monday progresses, with the highest weekly peak late-Mon into early Tues.  
@@ -115,8 +117,9 @@ Mercado daily historical sales data was analyzed with the Prophet library. Seaso
 
 A sales forecast was prepared for the finance group, highlighting the best case, worst case and most likely scenario for the upcoming quarter (~90 days).  
 
+**Fit Sales/Revenue Model With Forecast**  
 ![Mercado Revenue Model High Level With Forecast](media/14-sales-model-high-level-forecast.png)  
-
+**Sales Forecast (best/worst/likely)**  
 ![Mercado Daily Sales Revenue](media/15-sales-forecast-upcoming-quarter.png)  
 
 **Mercado Upcoming Quarterly Forecast**  
