@@ -43,6 +43,16 @@ The traffic in May 2020 was `38181`, which is `8.55%` higher than the median mon
 
 ### Seasonality Mining From Search Data
 
+Daily, hourly, and weekly seasonality was observed in the search data.  
+`Daily` - Tues had the highest average search traffic, with Monday a close second.  
+`Hourly` - The heatmap reveals that nearly every day, search traffic is highest from hour 22 to hour 01. Sunday however has a longer lull of low traffic from eary to mid day, but is still high by hour 23 at the day's end.  
+`Weekly` - The search traffic does show a rise during weeks 40 to 52, rising from 45.3 in week 42 to 49.7 in week 51. Traffic drops at the very last/first week of the year.  
+
+![Avg Traffic By Day Of Week](media/02-avg-traffic-by-day-of-week.png)  
+![HeatMap Search DayOfWeek / Hour](media/03-heatmap-day-of-week-by-hr.png)  
+![Avg Search Traffic by Week Of Year](media/03-heatmap-day-of-week-by-hr.png)  
+
+
 ### Search Traffic to Stock Price Correlation
 
 ### Prophet Time Series Model
