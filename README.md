@@ -82,6 +82,25 @@ There is an even smaller positive correlation of `0.017929` between Search Trend
 
 ### Prophet Time Series Model
 
+Mercado hourly search trend data was analyzed with the Prophet library. A roughly 80 day near-term forecast was generated from the fit model. Below is a graph showing the plot of the historical data model and the 80 day forecast at the tail. The near-term forecast trends downward for the first half of the forecast, then gradually trends upward. By the end of the forecast, the trend has almost recovered to the value of the search trend pre-forecast.  
+
+
+![Mercado Search Trends Forecast - Past and 80-Day Future](media/09-mercado-near-term-search-forecast.png)  
+
+![Mercado Search Trends Forecast - Forecast Close Up](media/10-mercado-forecast-close-up.png)  
+
+The prophet model also revealed weekly, yearly, and daily patterns in the time series data for the search trends:  
+
+![Mercado Prophet Seasonality Trends](media/11-mercado-daily-weekly-yearly-trends.png)  
+
+Observations:  
+The `daily` plot shows that Mercado search is most popular in the late evening, until about midnight. So, approximately from 20:00 - 01:00 every day.  
+
+The `weekly` plot shows that Mercado has the highest search traffic on Tuesday overall, although it significantly ramps up as Monday progresses, with the highest weekly peak late-Mon into early Tues.  
+
+The `yearly` plot shows that Mercado search traffic bottoms out about mid-October each year.  
+
+
 ### Forecast Revenue From Time Series Model
 
 
